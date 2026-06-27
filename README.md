@@ -1,19 +1,20 @@
-# Shinsekai Mouse Control
+# mouse_control
 
-21 LLM mouse control tools. Author: **pipi_**
+21 LLM mouse control tools for Shinsekai. Author: **pipi_**
 
 ## Install
 
-Copy the `mouse_control/` folder into Shinsekai's `plugins/` directory:
+### In-app (recommended)
 
+Add to Shinsekai Plugin Registry, then install from Plugin Manager.
+
+### Manual
+
+```bash
+git clone https://github.com/Mizushima-Mihane/mouse_control.git plugins/mouse_control
 ```
-plugins/
-└── mouse_control/    ← copy this entire folder
-    ├── plugin.py
-    ├── llm_tool.py
-    ├── omni_server.py
-    └── ...
-```
+
+Or download zip, rename the extracted folder to `mouse_control`, and place in `plugins/`.
 
 Then add to `data/config/plugins.yaml`:
 
@@ -22,8 +23,8 @@ Then add to `data/config/plugins.yaml`:
   enabled: true
 ```
 
-Restart Shinsekai.
-
 ## Requirements
 
-Run `install.bat` to install pyautogui. OmniParser deps can be installed via one-click button in plugin settings.
+- `install.bat` — installs pyautogui
+- OmniParser: one-click install in plugin settings
+- OCR: `pip install rapidocr-onnxruntime`
